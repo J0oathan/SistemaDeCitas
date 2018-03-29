@@ -6,6 +6,7 @@
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" charset=utf-8>
 	</head>
 	<body background="head2.jpg">
         <div class="row" style="margin:100px; padding:100px">
@@ -13,26 +14,22 @@
             <div class="col s12 m4"  style="margin-top:10px; margin-left:300px">
                 <!--<img src="../img/fcc.png">-->
                 <h5>Sistema de citas</h5>
-                <form method="post">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="Matricula" type="text">
-                            <label for="correo">Matricula</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="contrasenia" type="password">
-                            <label for="correo">Contraseña</label>
-                        </div>
-                    </div>
-                    <a href="">¿Olvidaste la contraseña?</a>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="iniciar" type="button" value="Iniciar sesión" class="btn" onclick="alert("Datos incorrectos");">
-                        </div>
-                    </div>
-                </form>
+              <form id="login" action="logueo.php" method="POST" > 
+            <div><label>Usuario:</label>
+
+            <input id="Matricula" name="Matricula" type="text" placeholder="Matricula" required ></div>
+            <br />
+            <div><label>Contraseña:</label><input id="Password" name="Password" type="password" placeholder="Password" required></div>
+            <br />
+            <div><input type="submit" value="Iniciar sesion" id="ins" class="btn btn-lg btn-primary"></div> 
+            <br>
+            <!--<a href="#  ">¿Olvidaste contraseña?</a><br><br>-->
+
+           
+            <br>
+
+            
+        </form>
             </div>
             
         </div>
