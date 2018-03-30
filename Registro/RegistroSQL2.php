@@ -14,7 +14,7 @@ $Contrasenia2 = $_POST["Contrasenia2"];
 if($Contrasenia==$Contrasenia2)
 {
 
-$verificar_matricula = mysqli_query($conexion, "SELECT * FROM usuarios WHERE id_usuario = '$Matricula'");
+$verificar_matricula = mysqli_query($conexion, "SELECT * FROM usuarios WHERE id = '$Matricula'");
 $verificar_correo = mysqli_query($conexion, "SELECT * FROM usuarios WHERE email_usuario = '$Email'");
 
 
@@ -32,9 +32,8 @@ if (mysqli_num_rows($verificar_matricula) > 0)
 	{
 			echo ("<SCRIPT LANGUAGE='JavaScript'>
       
-       				
-         			 window.alert('Matricula o email repetido')
-         			  window.history.go(-1);
+       				 window.location.href='registro.php'
+         			 window.alert('El usuario ya existe no se hizo la petición')
        				 </SCRIPT>");
 		
 				
@@ -44,9 +43,8 @@ if (mysqli_num_rows($verificar_matricula) > 0)
 	{
 				echo ("<SCRIPT LANGUAGE='JavaScript'>
       
-         			 window.alert('El correo ya esta registrado')
-
-       				 window.history.go(-1);
+       				 window.location.href='registro.php'
+         			 window.alert('Ese correo ya esta registrado')
        				 </SCRIPT>");
 					
 	}
@@ -70,6 +68,7 @@ if (mysqli_num_rows($verificar_matricula) > 0)
 				{
 					echo ("<SCRIPT LANGUAGE='JavaScript'>
       
+       				 window.location.href='vertabla.php'
          			 window.alert('Petición realizada exitosamente')
        				 </SCRIPT>");
 				}
