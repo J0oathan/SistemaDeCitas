@@ -214,7 +214,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Registro de Alumno
+        Registro de Docente
         
       </h1>
       <ol class="breadcrumb">
@@ -236,7 +236,7 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" method="post" action="RegistroSQL.php">
+            <form role="form" method="post" action="RegistroSQL2.php">
               <div class="box-body">
                  <div class="form-group">
                   <label for="exampleInputEmail1">id/matricula</label>
@@ -279,7 +279,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Registrar como alumno</button>
+                <button type="submit" class="btn btn-primary">Registrar como docente</button>
               </div>
             </form>
           </div>

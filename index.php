@@ -171,8 +171,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> Agregar Alumnos</a></li>
-             <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> Agregar Docente</a></li>
+            <li><a href="pages/forms/general.php"><i class="fa fa-circle-o"></i> Agregar Alumnos</a></li>
+             <li><a href="pages/forms/general2.php"><i class="fa fa-circle-o"></i> Agregar Docente</a></li>
           
           </ul>
         </li>
