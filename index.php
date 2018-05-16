@@ -83,7 +83,12 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="dist/img/logo2.png" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce1</span>
+              <span class="hidden-xs">
+                <?php
+                echo' '.$_SESSION["user"];
+                ?>
+  
+</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -142,6 +147,8 @@
     echo'<center>   <b><font color="#000000" face="georgia" size="4"><marquee width="200" scrollamount="6" bgcolor="#FFFFFF">Bienvenido '.$_SESSION["user"].'</marquee></font>';
 
 ?>
+
+
   
 </p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
@@ -155,27 +162,6 @@
         <li class="header">MAIN NAVIGATION</li>
        
        
-        <li>
-          <a href="pages/widgets.html">
-            <i class="fa fa-th"></i> <span>Widgets</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
-            </span>
-          </a>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-pie-chart"></i>
-            <span>Resultados</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-           
-          </ul>
-        </li>
        
         <li class="treeview">
           <a href="#">
@@ -213,6 +199,19 @@
           </a>
         </li>
        
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Resultados</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+           
+          </ul>
+        </li>
        
         
 
