@@ -1,3 +1,19 @@
+
+<?php
+
+  
+
+  session_start();
+  if(!isset($_SESSION["user"]))
+  {
+   header("location:login/IniciarSesion.html");  //sino inicio seccion lo dirigimos al login
+  }
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -121,7 +137,13 @@
           <img src="dist/img/logo2.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce3</p>
+          <p>
+<?php
+    echo'<center>   <b><font color="#000000" face="georgia" size="4"><marquee width="200" scrollamount="6" bgcolor="#FFFFFF">Bienvenido '.$_SESSION["user"].'</marquee></font>';
+
+?>
+  
+</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
