@@ -185,12 +185,12 @@
           </a>
           <ul class="treeview-menu">
            
-            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Ver lista de alumnos</a></li>
-             <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Ver lista de profesores</a></li>
+            <li><a href="pages/tables/data.php"><i class="fa fa-circle-o"></i> Ver lista de alumnos</a></li>
+             <li><a href="pages/tables/data2.php"><i class="fa fa-circle-o"></i> Ver lista de profesores</a></li>
           </ul>
         </li>
         <li>
-          <a href="pages/calendar.html">
+          <a href="pages/calendar.php">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
