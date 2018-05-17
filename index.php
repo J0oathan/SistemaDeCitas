@@ -316,7 +316,7 @@
         <!-- right col -->
 		
 		<div class="box box-success"></div>
-		<div class="col-md-11" style="text-align:center;">
+		<div class="col-md-11" >
 			<div id="page_calendar" ></div><br>
 		</div>
 		
