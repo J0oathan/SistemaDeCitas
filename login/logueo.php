@@ -19,7 +19,7 @@ $Matricula= $_POST['Matricula'];
 
 
 $sql = "SELECT * FROM usuarios WHERE id_usuario='$Matricula' AND pass_usuario='$Password'" ;
-$sqlu= "SELECT nombre_usuario FROM usuarios WHERE pass_usuario='$Password'";
+$sqlu= "SELECT nombre_usuario FROM usuarios WHERE id_usuario='$Matricula' AND pass_usuario='$Password'";
 
 $res= $conn->query($sql);			
 $resu= $conn->query($sqlu);
@@ -42,7 +42,7 @@ for ($setu = array (); $rowu = $resu->fetch_assoc(); $setu[] = $rowu['nombre_usu
 		
 	} else {
 
-		echo "<script>alert('Contraseña o Usuario es incorrecto.');location.href ='IniciarSesion.php';</script>";
+		echo "<script>alert('Contraseña o Usuario es incorrecto.');location.href ='IniciarSesion.html';</script>";
 
 		
 		

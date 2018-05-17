@@ -5,7 +5,7 @@
   session_start();
   if(!isset($_SESSION["user"]))
   {
-   header("location:../../login/IniciarSesion.html");  //sino inicio seccion lo dirigimos al login
+   header("location:../login/IniciarSesion.html");  //sino inicio seccion lo dirigimos al login
   }
 
 
@@ -76,25 +76,40 @@
                 echo' '.$_SESSION["user"];
                 ?>
   
-</span> </a>
+</span>
+            </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
                 <img src="../../dist/img/logo2.png" class="img-circle" alt="User Image">
 
                 <p>
-                 ¡No olvides cerrar sesion!<br>
-                 Que tengas un excelente dia
+                  Alexander Pierce - Web Developer2
+                  <small>Member since Nov. 2012</small>
                 </p>
               </li>
               <!-- Menu Body -->
-             
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
               <!-- Menu Footer-->
               <li class="user-footer">
-                
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
                 <div class="pull-right">
-                  <a href="../../login/cerrar.php" class="btn btn-default btn-flat">Cerrar Sesion</a>
-                  
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -199,13 +214,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Registro de Alumno
+        Registro de Docente
         
       </h1>
       <ol class="breadcrumb">
-        <li><a href="../../index.php"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li><a href="../../index.php"><i class="fa fa-dashboard"></i>Inicio</a></li>
         
-        <li class="active">Registrar alumno</li>
+        <li class="active">Resultados</li>
       </ol>
     </section>
 
@@ -221,10 +236,10 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" method="post" action="RegistroSQL.php">
+            <form role="form" method="post" action="RegistroSQL2.php">
               <div class="box-body">
                  <div class="form-group">
-                  <label for="exampleInputEmail1">id/matricula</label>
+                  <label for="exampleInputEmail1">Temper</label>
                   <input class="form-control" type="text" name="id" required placeholder="Inserta id/matricula">
 
                 </div>
@@ -264,7 +279,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Registrar como alumno</button>
+                <button type="submit" class="btn btn-primary">Registrar como docente</button>
               </div>
             </form>
           </div>
