@@ -64,6 +64,8 @@ if (mysqli_num_rows($verificar_matricula) > 0)
        
        				
        					  window.alert('Petición fallo')
+
+       						 window.history.go(-1);
         			</SCRIPT>");
 				}
 				else
@@ -71,6 +73,7 @@ if (mysqli_num_rows($verificar_matricula) > 0)
 					echo ("<SCRIPT LANGUAGE='JavaScript'>
       
          			 window.alert('Petición realizada exitosamente')
+         			 window.location.href ='../tables/data.php';
        				 </SCRIPT>");
 				}
 				//cerrar Conexión

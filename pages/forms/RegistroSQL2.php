@@ -32,8 +32,8 @@ if (mysqli_num_rows($verificar_matricula) > 0)
 	{
 			echo ("<SCRIPT LANGUAGE='JavaScript'>
       
-       				 window.location.href='registro.php'
          			 window.alert('El usuario ya existe no se hizo la petición')
+         			  window.history.go(-1);
        				 </SCRIPT>");
 		
 				
@@ -43,8 +43,9 @@ if (mysqli_num_rows($verificar_matricula) > 0)
 	{
 				echo ("<SCRIPT LANGUAGE='JavaScript'>
       
-       				 window.location.href='registro.php'
+       				 
          			 window.alert('Ese correo ya esta registrado')
+         			  window.history.go(-1);
        				 </SCRIPT>");
 					
 	}
@@ -62,14 +63,16 @@ if (mysqli_num_rows($verificar_matricula) > 0)
        
        				
        					  window.alert('Petición fallo')
+       					   window.history.go(-1);
         			</SCRIPT>");
 				}
 				else
 				{
 					echo ("<SCRIPT LANGUAGE='JavaScript'>
       
-       				 window.location.href='vertabla.php'
+       				
          			 window.alert('Petición realizada exitosamente')
+         			 window.location.href ='../tables/data2.php';
        				 </SCRIPT>");
 				}
 				//cerrar Conexión

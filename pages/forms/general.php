@@ -5,7 +5,7 @@
   session_start();
   if(!isset($_SESSION["user"]))
   {
-   header("location:../login/IniciarSesion.html");  //sino inicio seccion lo dirigimos al login
+   header("location:../../login/IniciarSesion.html");  //sino inicio seccion lo dirigimos al login
   }
 
 
@@ -46,11 +46,11 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="../../index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>I</b>Q</span>
+      <span class="logo-lg"><b>I</b>nicio</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -70,7 +70,7 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../dist/img/logo2.png" class="user-image" alt="User Image">
+              <img src="../../dist/img/logo2.png" class="user-image" alt="User Image">
               <span class="hidden-xs">
                 <?php
                 echo' '.$_SESSION["user"];
@@ -81,7 +81,7 @@
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="../dist/img/logo2.png" class="img-circle" alt="User Image">
+                <img src="../../dist/img/logo2.png" class="img-circle" alt="User Image">
 
                 <p>
                   Alexander Pierce - Web Developer2
@@ -127,7 +127,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/logo2.png" class="img-circle" alt="User Image">
+          <img src="../../dist/img/logo2.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>
@@ -159,8 +159,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> Agregar Alumnos</a></li>
-             <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> Agregar Docente</a></li>
+            <li><a href="general.php"><i class="fa fa-circle-o"></i> Agregar Alumnos</a></li>
+             <li><a href="general2.php"><i class="fa fa-circle-o"></i> Agregar Docente</a></li>
           
           </ul>
         </li>
@@ -173,12 +173,12 @@
           </a>
           <ul class="treeview-menu">
            
-            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Ver lista de alumnos</a></li>
-             <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Ver lista de profesores</a></li>
+            <li><a href="../tables/data.php"><i class="fa fa-circle-o"></i> Ver lista de alumnos</a></li>
+             <li><a href="../tables/data2.php"><i class="fa fa-circle-o"></i> Ver lista de profesores</a></li>
           </ul>
         </li>
         <li>
-          <a href="pages/calendar.html">
+          <a href="../calendar.php">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
@@ -218,9 +218,9 @@
         
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">General Elements</li>
+        <li><a href="../../index.php"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        
+        <li class="active">Registrar alumno</li>
       </ol>
     </section>
 

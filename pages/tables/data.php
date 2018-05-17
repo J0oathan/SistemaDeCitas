@@ -178,8 +178,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../pages/forms/general.php"><i class="fa fa-circle-o"></i> Agregar Alumnos</a></li>
-             <li><a href="../pages/forms/general2.php"><i class="fa fa-circle-o"></i> Agregar Docente</a></li>
+            <li><a href="../forms/general.php"><i class="fa fa-circle-o"></i> Agregar Alumnos</a></li>
+             <li><a href="../forms/general2.php"><i class="fa fa-circle-o"></i> Agregar Docente</a></li>
           
           </ul>
         </li>
@@ -192,12 +192,12 @@
           </a>
           <ul class="treeview-menu">
            
-            <li><a href="../pages/tables/data.php"><i class="fa fa-circle-o"></i> Ver lista de alumnos</a></li>
-             <li><a href="../pages/tables/data2.php"><i class="fa fa-circle-o"></i> Ver lista de profesores</a></li>
+            <li><a href="../tables/data.php"><i class="fa fa-circle-o"></i> Ver lista de alumnos</a></li>
+             <li><a href="../tables/data2.php"><i class="fa fa-circle-o"></i> Ver lista de profesores</a></li>
           </ul>
         </li>
         <li>
-          <a href="../pages/calendar.php">
+          <a href="../calendar.php">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
