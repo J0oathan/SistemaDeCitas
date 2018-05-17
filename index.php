@@ -22,6 +22,7 @@
   <title>Sistema de citas</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="estilo.css" type="text/css">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -52,6 +53,8 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  
+  <!--<link rel="import" href="./page_calendar.php" id="page_calendar" />-->
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -299,20 +302,34 @@
             <a href="#" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
+		
       </div>
+	  
       <!-- /.row -->
       <!-- Main row -->
-      <div class="row">
+      <div >
         <!-- Left col -->
        
         <!-- /.Left col -->
         <!-- right col (We are only adding the ID to make the widgets sortable)-->
        
         <!-- right col -->
+		
+		<div class="box box-success"></div>
+		<div class="col-md-11" style="text-align:center;">
+			<div id="page_calendar" ></div><br>
+		</div>
+		
       </div>
       <!-- /.row (main row) -->
-
+	  
     </section>
+	
+	<script>
+	    document.getElementById("page_calendar").innerHTML='<object type="text/html" data="page_calendar.php" class="col-md-10" height="650" width="100%" style="text-align:center;"></object>';
+	</script>
+	
+	
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
