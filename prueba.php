@@ -61,7 +61,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="index.php" class="logo">
+    <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -99,22 +99,34 @@
                 <img src="dist/img/logo2.png" class="img-circle" alt="User Image">
 
                 <p>
-                 ¡No olvides cerrar sesion!<br>
-                 Que tengas un excelente dia
+                  Alexander Pierce - Web Developer2
+                  <small>Member since Nov. 2012</small>
                 </p>
               </li>
               <!-- Menu Body -->
-            
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
               <!-- Menu Footer-->
               <li class="user-footer">
-                
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
                 <div class="pull-right">
-                  <a href="login/cerrar.php" class="btn btn-default btn-flat">Cerrar Sesion</a>
-                  
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
-            </ul>
-          </li>
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
@@ -235,12 +247,12 @@
             <div class="inner">
               <h3></h3>
 
-              <p>Resultados</p>
+              <p>Estadisticas</p>
             </div>
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
             </div>
-            <a href="" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="#" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -273,7 +285,7 @@
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="pages/forms/general.php" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="#" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <div class="col-lg-3 col-xs-6">
@@ -287,7 +299,7 @@
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="pages/forms/general2.php" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="#" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
 		
