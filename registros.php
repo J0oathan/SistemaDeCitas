@@ -1,7 +1,7 @@
 
 <?php
 
-$localhost="localhost";$user="root";$contra="";$db="sistemdecitas";
+$localhost="localhost";$user="root";$contra="";$db="sistemadecitas";
 $mysqli = new mysqli($localhost,$user,$contra,$db);
 if ($mysqli->connect_errno) {echo "Error al conectar a la DB"; exit;
 }else{echo "Conexión exitosa";

@@ -179,7 +179,7 @@
           <ul class="treeview-menu">
            
             <li><a href="../tables/data.php"><i class="fa fa-circle-o"></i> Ver lista de alumnos</a></li>
-             <li><a href=../tables/data2.php"><i class="fa fa-circle-o"></i> Ver lista de profesores</a></li>
+             <li><a href="../tables/data2.php"><i class="fa fa-circle-o"></i> Ver lista de profesores</a></li>
           </ul>
         </li>
         <li>
