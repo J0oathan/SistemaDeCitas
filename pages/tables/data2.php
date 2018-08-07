@@ -59,6 +59,34 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+
+
+  <script type="text/javascript">
+    
+
+     function modificarProducto(id_usuario,nombre_usuario,paterno_usuario,materno_usuario,email_usuario,area_usuario,Tipo_usuario)
+     {
+
+        $.post("modificar.php", {id_usuario,nombre_usuario,paterno_usuario,materno_usuario,email_usuario,area_usuario,Tipo_usuario}, function(data) {
+                   //console.log(data);
+
+                 $('#modi').html(data);
+                 
+                 })
+        }
+
+
+
+      function eliminarProducto(id_usuario){
+
+          $.post("eliminar.php", {id_usuario}, function(data) {
+                   //console.log(data);
+
+                 $('#eli').html(data);
+                 
+                 })
+          }
+  </script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -251,6 +279,7 @@
                   <th>Email</th>
                   <th>Area</th>
                   <th>Contraseña</th>
+                  <th>Acciones</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -263,6 +292,22 @@
                   <td><?php echo $row['email_usuario'];?>     </td>
                   <td><?php echo $row['area_usuario'];?>      </td>
                   <td> <?php echo $row['pass_usuario'];?>     </td>
+                   <?php 
+                   echo '<td>  <div class="btn-group">
+                         
+                         <button type="button"  class="btn btn-default"
+                          onClick=modificarProducto("'.$row["id_usuario"].'","'.$row["nombre_usuario"].'","'.$row["paterno_usuario"].'","'.$row["materno_usuario"].'","'.$row["email_usuario"].'","'.$row["area_usuario"].'","'.$row["Tipo_usuario"].'",)>
+                        
+                         <span class="glyphicon glyphicon-pencil"></span>
+                         </button>
+ 
+                         <button type="button" class="btn btn-default"  onClick=eliminarProducto("'.$row["id_usuario"].'")>
+                          <span class="glyphicon glyphicon-remove"></span>
+                         
+                        </button>
+
+                        </div>  
+                   </td>';?>
                 </tr>
                 
                
@@ -272,6 +317,14 @@
               
                 </tfoot>
               </table>
+
+               <div id="modi" >
+
+          </div>
+
+          <div id="eli" >
+
+          </div>
             </div>
             <!-- /.box-body -->
           </div>
@@ -284,6 +337,54 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+  
+               <?php 
+
+         if (!empty($_POST)) {
+           
+            $id_usuario = $_POST["id_usuario"];
+            $nombre_usuario= $_POST["nombre_usuario"];
+            $paterno_usuario = $_POST["paterno_usuario"];
+            $materno_usuario=$_POST["materno_usuario"];
+            $email_usuario= $_POST["email_usuario"];
+            $area_usuario = $_POST["area_usuario"];
+            
+            
+
+             $mysqli = new mysqli('localhost', 'root', '', 'sistemadecitas');
+            
+
+            $query = "UPDATE usuarios SET nombre_usuario = '$nombre_usuario' WHERE id_usuario =".$id_usuario;
+             $result = $mysqli->query($query);
+
+             $query2 = "UPDATE usuarios SET paterno_usuario = '$paterno_usuario' WHERE id_usuario =".$id_usuario;
+             $result2 = $mysqli->query($query2);
+
+              $query3 = "UPDATE usuarios SET materno_usuario = '$materno_usuario' WHERE id_usuario =".$id_usuario;
+             $result3 = $mysqli->query($query3);
+
+              $query4 = "UPDATE usuarios SET email_usuario = '$email_usuario' WHERE id_usuario =".$id_usuario;
+             $result4 = $mysqli->query($query4);
+
+              $query5 = "UPDATE usuarios SET area_usuario = '$area_usuario' WHERE id_usuario =".$id_usuario;
+             $result5 = $mysqli->query($query5);
+
+
+             
+
+
+
+      
+
+    
+         }else{
+
+         }
+
+
+
+          ?>
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.3.8
