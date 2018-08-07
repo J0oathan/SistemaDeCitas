@@ -175,7 +175,12 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="pages/forms/general.php"><i class="fa fa-circle-o"></i> Agregar Alumnos</a></li>
-             <li><a href="pages/forms/general2.php"><i class="fa fa-circle-o"></i> Agregar Docente</a></li>
+			';
+			if($fila["Tipo_usuario"] == "0"){
+				echo '
+             <li><a href="pages/forms/general2.php"><i class="fa fa-circle-o"></i> Agregar Docente</a></li>';
+			}
+			echo '
           
           </ul>
         </li>
@@ -284,35 +289,60 @@
           </div>
         </div>
         <!-- ./col -->
+	<?php
+		if($fila["Tipo_usuario"] == "0"){
+					
+		   echo '
+			<div class="col-lg-3 col-xs-6">
+			  <!-- small box -->
+			  <div class="small-box bg-yellow">
+				<div class="inner">
+				  <h3> </h3>
 
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3> </h3>
+				  <p>Agregar alumnos</p>
+				</div>
+				<div class="icon">
+				  <i class="ion ion-person-add"></i>
+				</div>
+				<a href="pages/forms/general.php" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
+			  </div>
+			</div>
+			<div class="col-lg-3 col-xs-6">
+			  <!-- small box -->
+			  <div class="small-box bg-yellow">
+				<div class="inner">
+				  <h3> </h3>
 
-              <p>Agregar alumnos</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-person-add"></i>
-            </div>
-            <a href="pages/forms/general.php" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3> </h3>
+				  <p>Agregar Docente</p>
+				</div>
+				<div class="icon">
+				  <i class="ion ion-person-add"></i>
+				</div>
+				<a href="pages/forms/general2.php" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
+			  </div>
+			</div>
+			';
+		}elseif($fila["Tipo_usuario"] == "1"){
+			echo '
+			<div class="col-lg-3 col-xs-6">
+			  <!-- small box -->
+			  <div class="small-box bg-yellow">
+				<div class="inner">
+				  <h3> </h3>
 
-              <p>Agregar Docente</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-person-add"></i>
-            </div>
-            <a href="pages/forms/general2.php" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
+				  <p>Agregar alumnos</p>
+				</div>
+				<div class="icon">
+				  <i class="ion ion-person-add"></i>
+				</div>
+				<a href="pages/forms/general.php" class="small-box-footer">Acceder <i class="fa fa-arrow-circle-right"></i></a>
+			  </div>
+			</div>
+			
+			';
+		}
+			
+	?>
 		
       </div>
 	  
