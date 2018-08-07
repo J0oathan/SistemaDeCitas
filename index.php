@@ -1,14 +1,22 @@
 
 <?php
-
+	$localhost="localhost";$user="root";$contra="";$db="sistemadecitas";
+  $mysqli = new mysqli($localhost,$user,$contra,$db);
+  if ($mysqli->connect_errno) {echo "Error al conectar a la DB"; exit;
+  }else{//echo "Conexión exitosa";
+  }
   
 
   session_start();
   if(!isset($_SESSION["user"]))
   {
-   header("location:login/IniciarSesion.html");  //sino inicio seccion lo dirigimos al login
+   header("location:login/IniciarSesion.html");  //sino inicio sesion lo dirigimos al login
   }
-
+	
+	$usuarioLog=$_SESSION["user"];
+  $qryTipoUser = "SELECT Tipo_usuario FROM usuarios where nombre_usuario='$usuarioLog'";
+  $res=$mysqli->query($qryTipoUser);
+  $fila=$res->fetch_assoc();
 
 
 ?>
@@ -152,8 +160,12 @@
       <ul class="sidebar-menu">
         <li class="header">Navegación principal</li>
        
-       
-       
+       <?php
+	   //echo 'holaaaa'.$fila["Tipo_usuario"];
+	   
+			if($fila["Tipo_usuario"] != "2"){
+				
+       echo '
         <li class="treeview">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Dar de alta</span>
@@ -180,6 +192,13 @@
              <li><a href="pages/tables/data2.php"><i class="fa fa-circle-o"></i> Ver lista de profesores</a></li>
           </ul>
         </li>
+		';
+			}
+			/*else{
+				echo '
+				';
+			}*/
+			echo '
         <li>
           <a href="pages/calendar.php">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
@@ -203,6 +222,10 @@
            
           </ul>
         </li>
+		';
+			//}
+		
+	   ?>
        
         
 
