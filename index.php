@@ -367,7 +367,7 @@
     </section>
 	
 	<script>
-	    document.getElementById("page_calendar").innerHTML='<object type="text/html" data="page_calendar.php" class="col-md-10" height="650" width="100%" style="text-align:center;"></object>';
+	    document.getElementById("page_calendar").innerHTML='<object type="text/html" data="page_calendar.php" height="650" width="100%" style="text-align:center;"></object>';
 	</script>
 	
 	

@@ -175,20 +175,51 @@
       <!--<form class="" action="" method="post">-->
 <form name="f1" method="post" action="registros.php">
       <div class="modal-body">
-        <label for="">Fecha: </label>
-        <input type="text" id="fecha" name="fecha"/></br>
-        <label for="">Nombre: </label>
-        <input type="text" id="nombre" name="nombre"/></br>
-        <!--<label for="">Inicio: </label>
-        <input type="text" id="inicio_d" name="inicio_d"/></br>-->
-        <label for="">Hora inicio: </label>
-        <input type="time" id="inicio_h" name="inicio_h" min="09:00" max="15:00"/></br>
-        <!--<label for="">Fin: </label>
-        <input type="text" id="fin_d" name="fin_d"/></br>-->
-        <label for="">Hora Fin: </label>
-        <input type="time" id="fin_h" name="fin_h"/></br>
-        <label for="">Color: </label>
-        <input type="color" id="color" name="color"/></br>
+	  <table align="center">
+		<tr>
+			<td><label for="">Fecha: </label><br></td>
+			<td><input type="text" id="fecha" name="fecha"/></br></td>
+		</tr>
+		<tr>
+			<td><label for="">Nombre: </label><br></td>
+			<td><input type="text" id="nombre" name="nombre"/></br></td>
+		</tr>
+		<tr>
+			<td><label for="">Hora inicio: </label><br></td>
+			<td><input type="time" id="inicio_h" name="inicio_h" min="09:00" max="15:00"/></br></td>
+		</tr>
+		<tr>
+			<td><label for="">Hora Fin: </label><br></td>
+			<td><input type="time" id="fin_h" name="fin_h"/></br></td>
+		</tr>
+		<tr>
+			<td><label for="">Color: </label><br></td>
+			<td><input type="color" id="color" name="color"/></br></td>
+		</tr>
+	  </table>
+		<!--<div class="col-md-4">
+			<label for="">Fecha: </label><br>
+			<label for="">Nombre: </label><br>
+			<label for="">Hora inicio: </label><br>
+			<label for="">Hora Fin: </label><br>
+			<label for="">Color: </label><br>
+		</div>
+		<div class="col-md-8">
+			<input type="text" id="fecha" name="fecha"/></br><br>
+			
+			<input type="text" id="nombre" name="nombre"/></br><br>
+			<!--<label for="">Inicio: </label>
+			<input type="text" id="inicio_d" name="inicio_d"/></br>-->
+		<!--	
+			<input type="time" id="inicio_h" name="inicio_h" min="09:00" max="15:00"/></br><br>
+			<!--<label for="">Fin: </label>
+			<input type="text" id="fin_d" name="fin_d"/></br>-->
+		<!--	
+			<input type="time" id="fin_h" name="fin_h"/></br><br>
+			
+			<input type="color" id="color" name="color"/></br><br>
+		</div>
+		-->
       </div>
       <div class="modal-footer">
         <!--<input type="submit" value="aGENDAR" onclick="fIns()"/>-->
@@ -217,12 +248,34 @@
 
       </div>
       <div class="modal-body">
-        Id: <input type="text" id="txtId" name="txtId" disabled/></br>
+		<table align="center">
+			<tr>
+				<td>Id:<br></td>
+				<td><input type="text" id="txtId" name="txtId" size="13" disabled/><br></td>
+			</tr>
+			<tr>
+				<td>Encargado:<br></td>
+				<td><input type="text" id="txtEncargado" name="txtEncargado" size="13"disabled/><br></td>
+			</tr>
+			<tr>
+				<td>Dia:<br></td>
+				<td><input type="text" id="txtDia" name="txtDia" size="13"disabled/><br></td>
+			</tr>
+			<tr>
+				<td>Inicio:<br></td>
+				<td><input type="text" id="txtHi" name="txtHi" size="13" disabled/><br></td>
+			</tr>
+			<tr>
+				<td>Fin:<br></td>
+				<td><input type="text" id="txtHf" name="txtHf" size="13" disabled/><br></td>
+			</tr>
+		</table>
+        <!--Id: <input type="text" id="txtId" name="txtId" disabled/></br>
         Encargado: <input type="text" id="txtEncargado" name="txtEncargado" disabled/></br>
         Dia: <input type="text" id="txtDia" name="txtDia" disabled/></br>
         Inicio: <input type="text" id="txtHi" name="txtHi" disabled/></br>
         Fin: <input type="text" id="txtHf" name="txtHf" disabled/></br>
-
+-->
       <?php
       /*  $clickEvento="SELECT * FROM citas";
         $resClick=$mysqli->query($clickEvento);
