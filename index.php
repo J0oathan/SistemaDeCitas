@@ -366,7 +366,7 @@
 	  
     </section>
 	
-	<script>
+	<script>  //se inserta la página del calendario
 	    document.getElementById("page_calendar").innerHTML='<object type="text/html" data="page_calendar.php" height="650" width="100%" style="text-align:center;"></object>';
 	</script>
 	

@@ -47,14 +47,14 @@
           allDaySlot: false,
           locale:"es",
           firstDay:0,
-          minTime: "09:00",
+          minTime: "09:00",  //se asigna el horario mínimo y máximo que será mostrado en el calendario
           maxTime: "16:00",
           slotDuration: '01:00:00',
           //axisFormat: 'hh:mm',
           timeFormat: 'hh:mm',
           slotLabelFormat:'(h:mm)a',
           //columnHeaderFormat: 'ddd',
-          weekends:false,
+          weekends:false,  //no muestra fines de semana
           //hourNames:['12:00am','1:00am','2:00am','3:00am','4:00am','5:00am','6:00am','7:00am','8:00am','09:00am','10:00am','11:00am','12:00pm','1:00pm','2:00pm','3:00pm'],
           //allDay:false,
           monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio','Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
@@ -161,7 +161,7 @@
 
     </div>
 
-<!-- Modal FORM-->
+<!-- Modal FORM-->   <!-- Creación del formulario para agendar un nuevo evento-->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
