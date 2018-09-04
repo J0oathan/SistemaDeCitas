@@ -205,7 +205,7 @@
 			}*/
 			echo '
         <li>
-          <a href="pages/calendar.php">
+          <a href="index.php">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
@@ -345,10 +345,19 @@
 	?>
 		
       </div>
+
+
+       <div class="row">
+        <!-- Left col -->
+        <section id="page_calendar" class="col-md-12">
+
+        </section>
+
+      </div>
 	  
       <!-- /.row -->
       <!-- Main row -->
-      <div >
+      
         <!-- Left col -->
        
         <!-- /.Left col -->
@@ -356,12 +365,8 @@
        
         <!-- right col -->
 		
-		<div class="box box-success"></div>
-		<div class="col-md-11" >
-			<div id="page_calendar" ></div><br>
-		</div>
-		
-      </div>
+
+     
       <!-- /.row (main row) -->
 	  
     </section>

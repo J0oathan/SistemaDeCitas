@@ -30,13 +30,13 @@ echo '
             <input  type="text" id="email_usuario" name="email_usuario" value="'.$email_usuario.'"  />
           <br><br>  
              Area
-            <input  type="text" id="area_usuario" name="area_usuario" value="'.$area_usuario.'"  />
+            <input  type="text" id="area_usuario" name="area_usuario" value="'.$area_usuario.'"  /><br>
             Tipo usuaio
             <input  type="text" id="area_usuario" name="area_usuario" value="'.$Tipo_usuario.'"  />
 
             <input  type="hidden" id="id_usuario" name="id_usuario" value="'.$id_usuario.'"  />
             
-            
+            <br>
 
        
            <input type="submit" name="" value="Actualizar"  onClick="reload" >
